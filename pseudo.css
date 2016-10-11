@@ -1,0 +1,37 @@
+/*
+Currently, the <li> items are block level elements. 
+Add correct styles to remove the bullets and display them 
+as inline elements.
+
+//using block class selector, margin: 0, padding: 0, ls
+type-none, display: inline block;
+
+The three <span> elements should be displayed 
+as block elements with a 1 pixel border and 25 pixel margin
+ on all sides.
+selector = .span {}
+
+In the article element with the class n-child,
+ add a 1 pixel border around every even numbered section element.
+ 
+.n-child 
+
+ */
+
+.block {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	display: inline;
+
+}
+
+.inline {
+	display: block;
+	border: 1px solid black;
+	margin: 25px;
+}
+
+.n-child section:nth-of-type(even) {
+	border: 1px solid black;
+}
